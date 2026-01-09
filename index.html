@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catchup Squad | Team Blog</title>
+    <style>
+      :root {
+        --color-text-primary: #1d1d1f;
+        --color-text-secondary: #86868b;
+        --color-divider: rgba(0, 0, 0, 0.05);
+
+        --glass-bg: rgba(255, 255, 255, 0.65);
+        --glass-border: rgba(255, 255, 255, 0.8);
+        --glass-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+        --glass-blur: blur(20px);
+
+        --spacing-unit: 20px;
+        --card-width: 85vw;
+        --nav-height: 80px;
+        --radius-bubble: 24px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        color: var(--color-text-primary);
+        line-height: 1.5;
+        overflow-y: scroll;
+        padding-top: var(--nav-height);
+        padding-bottom: 100px;
+
+        background: radial-gradient(circle at 0% 0%, #f5f5f7 0%, #e8e8ed 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--nav-height);
+
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: saturate(180%) var(--glass-blur);
+        -webkit-backdrop-filter: saturate(180%) var(--glass-blur);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        display: flex;
+        align-items: center;
+        padding-left: 5vw;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-brand {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--color-text-primary);
+      }
+
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0 60px 0;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        text-align: center;
+
+        background: linear-gradient(135deg, #1d1d1f 0%, #434344 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .blog-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+      }
+
+      .blog-card {
+        width: var(--card-width);
+        max-width: 980px;
+
+        background-color: var(--glass-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+
+        border-radius: var(--radius-bubble);
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+          box-shadow 0.3s ease;
+        overflow: hidden;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-4px) scale(1.005);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 40px;
+
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-text-secondary);
+      }
+
+      .card-divider {
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-divider);
+        border: none;
+      }
+
+      .card-body {
+        padding: 48px 40px;
+      }
+
+      .entry-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        color: var(--color-text-primary);
+      }
+
+      .entry-text {
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: #424245;
+        max-width: 90%;
+        line-height: 1.6;
+      }
+
+      .card-footer {
+        padding: 0 40px 32px 40px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .timestamp {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--color-text-secondary);
+        background: rgba(0, 0, 0, 0.03);
+        padding: 4px 12px;
+        border-radius: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .blog-card {
+          width: 90vw;
+        }
+
+        .card-header,
+        .card-body,
+        .card-footer {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+
+        .entry-title {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-brand">Catchup Squad</div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Team Blog</h1>
+      </section>
+
+      <section class="blog-container">
+        <article class="blog-card">
+          <div class="card-header">
+            <span class="week-label">Week 01</span>
+            <span class="date-label">Jan 10, 2026</span>
+          </div>
+
+          <hr class="card-divider" />
+
+          <div class="card-body">
+            <h2 class="entry-title">Start of the Journey</h2>
+            <p class="entry-text">
+              We officially formed the team this week albeit a bit later than
+              the rest since most of us were unable to attend the lecture, hence
+              "catchup squad". We wasted no time getting started though, and the
+              focus was on coming up with a concrete idea for the game we are
+              developing. After a few brainstorming sessions, we have a concept
+              everyone is excited about and are ready to move into the planning
+              phase.
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <span class="timestamp">Posted 5:42 PM</span>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
