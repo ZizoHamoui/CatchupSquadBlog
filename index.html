@@ -6,7 +6,7 @@
     <title>Catchup Squad | Team Blog</title>
     <style>
       :root {
-        --color-text-primary: #1d1d1f;
+        --color-text-primary: #1d1d1f; 
         --color-text-secondary: #86868b;
         --color-divider: rgba(0, 0, 0, 0.05);
 
@@ -56,8 +56,10 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding-left: 5vw;
+        padding-right: 5vw;
         z-index: 1000;
         transition: background-color 0.3s ease;
       }
@@ -67,6 +69,103 @@
         font-weight: 600;
         letter-spacing: -0.01em;
         color: var(--color-text-primary);
+      }
+
+      .nav-menu {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-link {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--color-text-primary);
+        cursor: pointer;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        font-family: inherit;
+        transition: opacity 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .nav-link:hover {
+        opacity: 0.7;
+      }
+      
+      /* Optional: Rotate arrow on hover */
+      .dropdown:hover .nav-link svg {
+        transform: rotate(180deg);
+      }
+      
+      .nav-link svg {
+        transition: transform 0.2s ease;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: calc(var(--nav-height) - 10px);
+        right: 0;
+        width: 200px;
+        
+        background-color: var(--glass-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: 1px solid var(--glass-border);
+        
+        padding: 8px;
+        z-index: 1001;
+        
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        animation: fadeInSlide 0.3s forwards;
+      }
+
+      @keyframes fadeInSlide {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Dropdown Links */
+      .dropdown-content a {
+        color: var(--color-text-primary);
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        transition: background-color 0.2s ease;
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.8);
       }
 
       .hero {
@@ -98,7 +197,7 @@
 
       .blog-card {
         width: var(--card-width);
-        max-width: 980px;
+        max-width: 980px; 
 
         background-color: var(--glass-bg);
         backdrop-filter: var(--glass-blur);
@@ -118,7 +217,12 @@
       .blog-card:hover {
         transform: translateY(-4px) scale(1.005);
         box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.75
+        );
       }
 
       .card-header {
@@ -202,6 +306,23 @@
   <body>
     <nav class="nav-bar">
       <div class="nav-brand">Catchup Squad</div>
+      
+      <div class="nav-menu">
+        <div class="dropdown">
+          <button class="nav-link">
+            Personal Blogs
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Abdul Hamoui's Blog</a>
+            <a href="#">Kate Lee's Blog</a>
+            <a href="#">Person C Blog</a>
+            <a href="#">Person D Blog</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -210,6 +331,7 @@
       </section>
 
       <section class="blog-container">
+        <!-- Week 1 Entry -->
         <article class="blog-card">
           <div class="card-header">
             <span class="week-label">Week 01</span>
