@@ -24,7 +24,7 @@ const blogPosts = [
         items: [
           "<strong>Abdul Aziz Hamoui:</strong> Abdul created the core storyboard and idea on Figjam and then helped finalizing our 12-page proposal document. He also coordinated the team’s tasks as well as presentation hand-off",
           "<strong>Kate Lee:</strong> Kate established our shared workspace, led the narrative development and documentation by structuring it in the google doc, and recorded the instructor's feedback during the review to guide our next steps.",
-          "<strong>Janis Tong:</strong> Janis designed the initial sketches for our stationery defenders—the Pencil, Compass, and Eraser—and visualized the core gameplay loop.",
+          "<strong>Janis Tong:</strong> Janis designed the initial sketches for our stationery defenders; the Pencil, Compass, and Eraser—and visualized the core gameplay loop.",
           "<strong>Haoyu (Rakko) Zhan:</strong> Rakko developed our polished presentation slides, outlined our technical strategy using Unity, and stepped in to present mechanics during the greenlight presentation."
         ]
       },
