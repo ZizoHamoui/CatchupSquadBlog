@@ -8,8 +8,6 @@ const blogPosts = [
     timestamp: "Posted 5:42 PM"
   },
   
-  // To add a new card, simply copy the object structure below:
-  /*
   {
     id: 2,
     week: "Week 02",
@@ -18,5 +16,4 @@ const blogPosts = [
     content: "This week we started working on the Inkwell Insurgency prototype...",
     timestamp: "Posted 2:15 PM"
   }
-  */
 ];
