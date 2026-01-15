@@ -12,8 +12,8 @@ const blogPosts = [
       },
       {
         type: "image",
-        src: "images/gameOverview.jpg",
-        alt: "Team brainstorming session"
+        src: "gameOverview.png",
+        alt: "Game Image"
       },
       {
         type: "paragraph",
