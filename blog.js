@@ -8,12 +8,12 @@ const blogPosts = [
     timestamp: "Posted 5:42 PM"
   },
   
-  {
-    id: 2,
-    week: "Week 02",
-    date: "Jan 16, 2026",
-    title: "Prototyping Phase",
-    content: "This week we started working on the Inkwell Insurgency prototype...",
-    timestamp: "Posted 2:15 PM"
-  }
+  // {
+  //   id: 2,
+  //   week: "Week 02",
+  //   date: "Jan 16, 2026",
+  //   title: "Prototyping Phase",
+  //   content: "This week we started working on the Inkwell Insurgency prototype...",
+  //   timestamp: "Posted 2:15 PM"
+  // }
 ];
