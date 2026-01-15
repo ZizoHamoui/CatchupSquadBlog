@@ -173,11 +173,6 @@ body {
   overflow: hidden;
 }
 
-.blog-card:hover {
-  transform: translateY(-4px) scale(1.005);
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -241,10 +236,6 @@ strong {
   display: block;
   object-fit: cover;
   transition: transform 0.5s ease;
-}
-
-.blog-card:hover .card-image {
-  transform: scale(1.02);
 }
 
 .card-footer {
