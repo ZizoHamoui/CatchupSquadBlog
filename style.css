@@ -224,14 +224,14 @@ strong {
 
 /* Images */
 .card-image-container {
-  width: 100%;
+  width: 80%;
   border-radius: 12px;
   overflow: hidden;
   margin: 24px 0;
 }
 
 .card-image {
-  width: 70%;
+  width: 80%;
   display: block;
   object-fit: cover;
   transition: transform 0.5s ease;
