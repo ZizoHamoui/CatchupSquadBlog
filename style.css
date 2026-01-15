@@ -225,13 +225,13 @@ strong {
 /* Images */
 .card-image-container {
   width: 80%;
-  border-radius: 12px;
   overflow: hidden;
   margin: 24px 0;
 }
 
 .card-image {
   width: 80%;
+  order-radius: 12px;
   display: block;
   object-fit: cover;
   transition: transform 0.5s ease;
