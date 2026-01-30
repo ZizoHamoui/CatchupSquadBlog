@@ -1,5 +1,4 @@
 const blogPosts = [
-  // --- LATEST POST (ID: 2) GOES FIRST ---
   {
     id: 2,
     week: "Week 04",
@@ -18,7 +17,7 @@ const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<strong>Individual Contributions</strong>"
+        content: "<strong>Contributions</strong>"
       },
       {
         type: "paragraph",
