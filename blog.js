@@ -37,7 +37,7 @@ const blogPosts = [
         content: "Our presentation on January 14th received positive feedback, especially regarding our 'Inked Tile' mechanic which forces players to actively clean the board. We are now refining our work into Game Proposal 2.0 and beginning technical prototyping."
       }
     ]
-  }
+  },
 
   {
     id: 2,
@@ -66,6 +66,7 @@ const blogPosts = [
       {
         type: "paragraph",
         content: "Afterwards, Kate set up a shared document for members to add their part, and Abdul built the presentation slides and assigned speaking roles for each teammate. Janis also created animated sprites for visual richness to our presentation. We ultimately added several fine details such as prologue length, consistency, and the addition of mug blocks and freeze-status monsters to increase depth."
+      }, 
       {
         type: "paragraph",
         content: "<strong>Looking Ahead</strong>"
@@ -75,5 +76,5 @@ const blogPosts = [
         content: "For the next milestone, our goal is to expand these foundations into a functional prototype. Based on GDD presentation feedback, we decided to distribute smart depth more effectively across player learning curve, introducing incrementing difficulty across three levels. We will introduce the mug blocks in level 2, and freezing monsters in level 3 with a 5-second cooldown and a 3-second frozen-status duration. Abdul and Rakko will focus on implementing the core mechanic coding including tiling, drag-and-drop placement, shooting mechanics, and a main screen UI leading into prologue. Janis and Kate will refine illustrations for tighter animation and consistent theme aligning with our intended rustic visual style."
       }
     ]
-}
+  }
 ];
