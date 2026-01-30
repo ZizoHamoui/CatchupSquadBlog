@@ -1,4 +1,44 @@
 const blogPosts = [
+  // --- LATEST POST (ID: 2) GOES FIRST ---
+  {
+    id: 2,
+    week: "Week 04",
+    date: "Jan 29, 2026",
+    title: "Milestone 2: Game Design Document & Presentation",
+    timestamp: "Posted 8:55 PM",
+    body: [
+      {
+        type: "paragraph",
+        content: "This week, our team focused on building the first Game Design Document for Desk TD. We laid out the initial structures, finalized our narrative flowboards, and prepared a polished presentation. We also added several fine details such as prologue length and consistency to increase the game's depth."
+      },
+      {
+        type: "image",
+        src: "brainstorm.jpg",
+        alt: "GDD Presentation Slides"
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Individual Contributions</strong>"
+      },
+      {
+        type: "paragraph",
+        content: "Abdul created an organized agenda and laid out the initial structures for the rest of the teammates to build upon. Kate developed the functional and narrative flowboard, then Abdul finalized the narrative flowboard, gameplay mode, resolution type, and appeal evaluation. Rakko defined the smart depth and protagonist/antagonist concepts, while Janis visually designed concept shots as well as protagonists and antagonists."
+      },
+      {
+        type: "paragraph",
+        content: "Afterwards, Kate set up a shared document for members to add their part, and Abdul built the presentation slides and assigned speaking roles for each teammate. Janis also created animated sprites for visual richness to our presentation. We ultimately added several fine details such as prologue length, consistency, and the addition of mug blocks and freeze-status monsters to increase depth."
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Looking Ahead</strong>"
+      },
+      {
+        type: "paragraph",
+        content: "For the next milestone, our goal is to expand these foundations into a functional prototype. Based on GDD presentation feedback, we decided to distribute smart depth more effectively across player learning curve, introducing incrementing difficulty across three levels. We will introduce the mug blocks in level 2, and freezing monsters in level 3 with a 5-second cooldown and a 3-second frozen-status duration. Abdul and Rakko will focus on implementing the core mechanic coding including tiling, drag-and-drop placement, shooting mechanics, and a main screen UI leading into prologue. Janis and Kate will refine illustrations for tighter animation and consistent theme aligning with our intended rustic visual style."
+      }
+    ]
+  },
+
   {
     id: 1,
     week: "Week 02",
@@ -35,45 +75,6 @@ const blogPosts = [
       {
         type: "paragraph",
         content: "Our presentation on January 14th received positive feedback, especially regarding our 'Inked Tile' mechanic which forces players to actively clean the board. We are now refining our work into Game Proposal 2.0 and beginning technical prototyping."
-      }
-    ]
-  },
-
-  {
-    id: 2,
-    week: "Week 04",
-    date: "Jan 29, 2026",
-    title: "Milestone 2: Game Design Document & Presentation",
-    timestamp: "Posted 8:55 PM",
-    body: [
-      {
-        type: "paragraph",
-        content: "This week, our team focused on building the first Game Design Document for Desk TD. We laid out the initial structures, finalized our narrative flowboards, and prepared a polished presentation. We also added several fine details such as prologue length and consistency to increase the game's depth."
-      },
-      {
-        type: "image",
-        src: "brainstorm.jpg",
-        alt: "Brainstrom session"
-      },
-      {
-        type: "paragraph",
-        content: "<strong>Contributions</strong>"
-      },
-      {
-        type: "paragraph",
-        content: "Abdul created an organized agenda and laid out the initial structures for the rest of the teammates to build upon. Kate developed the functional and narrative flowboard, then Abdul finalized the narrative flowboard, gameplay mode, resolution type, and appeal evaluation. Rakko defined the smart depth and protagonist/antagonist concepts, while Janis visually designed concept shots as well as protagonists and antagonists."
-      },
-      {
-        type: "paragraph",
-        content: "Afterwards, Kate set up a shared document for members to add their part, and Abdul built the presentation slides and assigned speaking roles for each teammate. Janis also created animated sprites for visual richness to our presentation. We ultimately added several fine details such as prologue length, consistency, and the addition of mug blocks and freeze-status monsters to increase depth."
-      }, 
-      {
-        type: "paragraph",
-        content: "<strong>Looking Ahead</strong>"
-      },
-      {
-        type: "paragraph",
-        content: "For the next milestone, our goal is to expand these foundations into a functional prototype. Based on GDD presentation feedback, we decided to distribute smart depth more effectively across player learning curve, introducing incrementing difficulty across three levels. We will introduce the mug blocks in level 2, and freezing monsters in level 3 with a 5-second cooldown and a 3-second frozen-status duration. Abdul and Rakko will focus on implementing the core mechanic coding including tiling, drag-and-drop placement, shooting mechanics, and a main screen UI leading into prologue. Janis and Kate will refine illustrations for tighter animation and consistent theme aligning with our intended rustic visual style."
       }
     ]
   }
