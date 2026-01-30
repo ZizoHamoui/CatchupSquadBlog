@@ -52,12 +52,12 @@ const blogPosts = [
       },
       {
         type: "image",
-        src: "barinstorm.jpg",
-        alt: "GDD Presentation Slides"
+        src: "brainstorm.jpg",
+        alt: "Brainstrom session"
       },
       {
         type: "paragraph",
-        content: "<strong>Individual Contributions</strong>"
+        content: "<strong>Contributions</strong>"
       },
       {
         type: "paragraph",
