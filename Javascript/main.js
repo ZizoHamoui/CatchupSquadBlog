@@ -17,7 +17,15 @@ const createBodyContent = (section) => {
         <div class="card-image-container">
           <img src="${section.src}" alt="${section.alt || 'Blog Image'}" class="card-image">
         </div>`;
-    
+
+    case 'image-pair':
+      const imgs = section.images.map(img =>
+        `<div class="image-pair-item">
+          <img src="${img.src}" alt="${img.alt || 'Blog Image'}" class="card-image">
+        </div>`
+      ).join('');
+      return `<div class="image-pair-container">${imgs}</div>`;
+
     default:
       return '';
   }
