@@ -14,9 +14,9 @@ const blogPosts = [
       {
         type: "image-pair",
         images: [
-          { src: "../Img/playtesting-lab.jpg", alt: "Playtesting Lab Session" },
+          { src: "Img/playtesting-lab.jpg", alt: "Playtesting Lab Session" },
           {
-            src: "../Img/week6-journal-figma.png",
+            src: "Img/week6-journal-figma.png",
             alt: "Week 6 Journal FigJam",
           },
         ],
@@ -52,7 +52,7 @@ const blogPosts = [
       },
       {
         type: "image",
-        src: "../Img/brainstorm.jpg",
+        src: "Img/brainstorm.jpg",
         alt: "GDD Presentation Slides",
       },
       {
@@ -95,7 +95,7 @@ const blogPosts = [
       },
       {
         type: "image",
-        src: "../Img/gameOverview.png",
+        src: "Img/gameOverview.png",
         alt: "Game Image",
       },
       {
