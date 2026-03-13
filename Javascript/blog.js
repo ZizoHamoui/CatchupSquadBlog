@@ -1,10 +1,78 @@
 const blogPosts = [
   {
+    id: 4,
+    week: "Week 09",
+    date: "Mar 12, 2026",
+    title: "Milestone 4: Alpha",
+    timestamp: "Posted 7:23 PM",
+    body: [
+      {
+        type: "paragraph",
+        content:
+          "For our alpha milestone, the team focused on transforming Desk TD from a functional prototype into a polished, cohesive experience. Over the past three weeks, we brought together full sprite animations, a complete menu and navigation system, new game mechanics, and integrated all individual components into a unified playable build. The result is a game that now feels alive, towers animate when attacking, enemies march with walk cycles, and players are greeted with a cinematic intro sequence before diving into gameplay.",
+      },
+      {
+        type: "image",
+        src: "Img/AlphaMilestone.png",
+        alt: "Desk TD Alpha Gameplay",
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Contributions</strong>",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Abdul</strong> led level design and programming, structuring and building out the Level 2 game environment with updated wave configurations, enemy tuning, and gameplay logic. He partnered with Kate for playtesting sessions to validate mechanics and gameplay flow, and captured narrated video footage for the demo presentation.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Kate</strong> designed the user interface for the game's menus, including the main menu, pause menu, level select, and handbook screens. She collaborated with Abdul on playtesting to identify issues in the player experience, and co-authored the revised Game Design Document alongside Janis and Rakko.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Janis</strong> created the visual sprite assets and animations that bring the game to life, enemy walk cycles, pencil shoot flashes, compass wind-up sequences, sticky note damage states, and spark tower fill-level indicators. She also collaborated on the Game Design Document.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Rakko</strong> programmed the underlying logic for the start screen, menus, and story scenes, including the intro cinematic with a typewriter text effect, level select navigation, persistent menu music, and a universal button click sound system. He then stitched all individual components, art, mechanics, menus, and audio, together into a cohesive, playable build. Rakko also contributed to the Game Design Document.",
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Key Features Added</strong>",
+      },
+      {
+        type: "list",
+        items: [
+          "Full sprite animation system for all towers and enemies, including attack sequences and damage states",
+          "Complete menu and navigation flow: main menu, level select, pause menu, handbook, and prologue cinematic with typewriter text",
+          "Ink shield mechanic allowing enemies to gain a protective shield when walking on ink trails left by other enemies",
+          "Arc projectile system with splash damage for the compass tower",
+          "Tower kill quips, humorous pop-up messages unique to each tower type when they land the final hit of a wave",
+          "Persistent audio system with menu music, button click SFX, and scene-aware transitions",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Looking Ahead</strong>",
+      },
+      {
+        type: "paragraph",
+        content:
+          "With the alpha build complete, our next focus will be on further balancing difficulty across levels, expanding Level 3 content, and refining the overall player experience based on continued playtesting feedback. We also aim to polish visual and audio elements for a more immersive final build.",
+      },
+    ],
+  },
+
+  {
     id: 3,
     week: "Week 06",
     date: "Feb 12, 2026",
     title: "Milestone 3: First Playable",
-    timestamp: "Posted 8:55 PM",
+    timestamp: "Posted 9:12 PM",
     body: [
       {
         type: "paragraph",
