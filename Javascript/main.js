@@ -17,6 +17,22 @@ const createBodyContent = (section) => {
           <img src="${section.src}" alt="${section.alt || "Blog Image"}" class="card-image">
         </div>`;
 
+    case "video":
+      return `
+        <div class="card-image-container">
+          <video controls class="card-image">
+            <source src="${section.src}" type="video/quicktime">
+            <source src="${section.src}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>`;
+
+    case "youtube":
+      return `
+        <div class="card-image-container">
+          <iframe src="${section.src}" title="${section.alt || "YouTube Video"}" class="card-image" style="aspect-ratio: 16/9; border: none;" allowfullscreen></iframe>
+        </div>`;
+
     case "image-pair":
       const imgs = section.images
         .map(

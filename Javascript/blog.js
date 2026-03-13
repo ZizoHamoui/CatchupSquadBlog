@@ -12,9 +12,9 @@ const blogPosts = [
           "For our alpha milestone, the team focused on transforming Desk TD from a functional prototype into a polished, cohesive experience. Over the past three weeks, we brought together full sprite animations, a complete menu and navigation system, new game mechanics, and integrated all individual components into a unified playable build. The result is a game that now feels alive, towers animate when attacking, enemies march with walk cycles, and players are greeted with a cinematic intro sequence before diving into gameplay.",
       },
       {
-        type: "image",
-        src: "Img/AlphaMilestone.png",
-        alt: "Desk TD Alpha Gameplay",
+        type: "youtube",
+        src: "https://www.youtube.com/embed/XA5Q6N2_Be0",
+        alt: "Desk TD Alpha Demo",
       },
       {
         type: "paragraph",
