@@ -1,5 +1,70 @@
 const blogPosts = [
   {
+    id: 5,
+    week: "Week 11",
+    date: "Mar 26, 2026",
+    title: "Milestone 5: Beta",
+    timestamp: "Posted 6:45 PM",
+    body: [
+      {
+        type: "image",
+        src: "Img/BetaPresentation.png",
+        alt: "Desk TD Beta Presentation",
+      },
+      {
+        type: "paragraph",
+        content:
+          "For our beta milestone, the team focused on increasing content and depth of Desk TD. Over the past two weeks, we brought more reasonable level balancing, a polished menu and navigation system with better outlook, approaching end of lanes warning mechanics and upgraded sprites on bullets and enemies. The result is a game that is more durable and pressured when playing and the player got more immersive experience.",
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Contributions</strong>",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Abdul</strong> led level design and in level feedback, structuring and building out the Level 1 and 2 game environments with updated wave configurations, enemy tuning, and gameplay logic. He recorded demo presentation video and wrote the part 6 of Game Design Document update.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Kate</strong> wrote the design questions that guide us during the beta code development. She and Janis checked mechanics and gameplay flow through playtesting and provided useful information for the next step game upgrading.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Janis</strong> did playtesting and reports write-up with Kate. She made some minor changes on visual asset as UI integration requirement and prepared text font and other new assets. She also collaborated on the Game Design Document for part 3.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Rakko</strong> replaced and arranged UI integration for all the menu and handbook within new text font and visual assets. He also contributed to the Game Design Document for part 4 and 5.",
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Key Features Added</strong>",
+      },
+      {
+        type: "list",
+        items: [
+          "Better and more reasonable looking for bullets shot from stationery defence towers",
+          "Refreshed menu and navigation outlook: main menu, level select, handbook, and prologue cinematic with typewriter text intro scene",
+          "Redesigned UI elements placement in the level",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Looking Ahead</strong>",
+      },
+      {
+        type: "paragraph",
+        content:
+          "To the golden code, we will create level 3 content, find a better way to illustrate the frozen effect, make the learning curve between level 1 and 2 more meaningful, and refining the overall balancing and player experience.",
+      },
+    ],
+  },
+
+  {
     id: 4,
     week: "Week 09",
     date: "Mar 12, 2026",
