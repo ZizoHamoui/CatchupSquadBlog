@@ -1,5 +1,59 @@
 const blogPosts = [
   {
+    id: 6,
+    week: "Week 13",
+    date: "Apr 9, 2026",
+    title: "Final Milestone: Golden Build & Showcase",
+    timestamp: "Posted 10:28 PM",
+    body: [
+      {
+        type: "youtube",
+        src: "https://www.youtube.com/embed/p1Py1tCUMkU",
+        alt: "Desk TD Game Trailer",
+      },
+      {
+        type: "paragraph",
+        content:
+          "As we approached the final stage of our project, the team focused on polishing both visual and technical aspects based on the feedback from the beta review. These included enhancing UI clarity through better color contrast, refining enemy variation mechanics to create stronger urgency, and increasing overall player engagement. We also distributed responsibilities based on individual strengths: Abdul led major development, Kate finalized the design documentation, Janis created the non-playable trailer, and Rakko handled the gameplay walkthrough recording.",
+      },
+      {
+        type: "paragraph",
+        content: "<strong>Contributions</strong>",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Abdul</strong> refined game balance by adjusting generation speed to increase intensity, improved the learning experience with a more forgiving Level 1 tutorial, and enhanced the narrative system with follow-up dialogue support and control scheme modifiers for skipping dialogues. He also reduced visual strain on the warning screen, implemented Level 3 with freeze enemies, and added tower upgrade mechanics.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Kate</strong> refined UI and HUD elements, including pause/play screens, dialogue and message boxes, warning screen, visual effects, upgrade interfaces, and modal states for pause, win, and loss screens. She also structured and finalized the team's design document.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Janis</strong> designed the ice spark asset for the freeze tower, developed a third enemy type with visual distinction for AI mechanics, edited the handbook interface, and created the animated game trailer.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "<strong>Rakko</strong> built and deployed the WebGL version of the game on itch.io, and produced a full gameplay walkthrough video guiding players from the first to the final level.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Through this process, we learned that effective collaboration relies on leveraging each member's strengths. By recognizing individual capabilities and supporting one another where needed, we learned how to manage a balanced workflow. We would like to especially thank and appreciate Abdul's leadership as the product manager in guiding decisions and keeping the team intact.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Presenting our work at the showcase was an unforgettable experience.Their encouragement and insightful comments proved that all the late nights, collaborative problem-solving, and moments of doubt were worth it. We are grateful for the opportunity to share our project with such a supportive community, and we look forward to applying what we've learned in future endeavors.",
+      },
+    ],
+  },
+
+  {
     id: 5,
     week: "Week 11",
     date: "Mar 26, 2026",
